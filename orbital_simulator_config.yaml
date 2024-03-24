@@ -1,0 +1,24 @@
+# This configuration file considers 3D space (position and velocity vectors have three components).
+# The current version of the orbital simulation application only uses 2D space (z components of position and velocity
+# are ignored).
+
+animation:
+  duration: 90 # Duration of the animation in seconds
+
+simulation:
+  duration: 23587200 # Total duration of the simulation in seconds
+  timestep: 3600 # Time step for simulation calculation in seconds
+
+celestial_bodies:
+  Earth:
+    mass: 5.972e24  # Mass of Earth in kilograms
+    position: [0, 0, 0]  # Initial position of Earth in meters (x, y, z)
+    velocity: [0, 0, 0]  # Initial velocity of Earth in meters/second (vx, vy, vz)
+    radius: 6371000  # Radius of Earth in meters
+    color: (30, 144, 255) # RGB color code for Earth for visualization
+  Moon:
+    mass: 7.348e22  # Mass of the Moon in kilograms
+    position: [384400000, 0, 0]  # Initial position of the Moon in meters (from Earth)
+    velocity: [0, 1022, 0]  # Initial velocity of the Moon in meters/second (vx, vy, vz)
+    radius: 1737100  # Radius of the Moon in meters
+    color: (160, 160, 160) # RGB color code for the Moon for visualization
