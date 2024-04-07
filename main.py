@@ -10,7 +10,7 @@ def main():
     sim = Simulation(celestial_bodies)
     sim.run_simulation(simulation_config['duration'], simulation_config['timestep'])
 
-    animate_simulation(sim.trajectory, animation_config['duration'])
+    animate_simulation(sim.trajectory, sim.hamiltonian, animation_config['duration'])
 
 
 if __name__ == "__main__":
